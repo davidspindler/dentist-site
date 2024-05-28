@@ -11,12 +11,12 @@ import Home from './Home'
 import About from './About'
 import Services from './pages/Services'
 import { useNavigate } from 'react-router-dom' 
+import Footer from './components/Footer'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log('hi')
+  // const [count, setCount] = useState(0)
 const navigate = useNavigate()
 
   const items = [
@@ -129,9 +129,11 @@ const navigate = useNavigate()
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="aboutus" element={<About />} />
+        <Route path="aboutOFFCAD" element={<About />} />
         <Route path="services" element={<Services />} />
+        <Route path="*" element={<div>sorry, unable to find this page, please navigate back to home</div>} />
       </Routes>
+      <Footer />
     </>
   )
 }

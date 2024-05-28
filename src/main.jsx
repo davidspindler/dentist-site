@@ -4,7 +4,6 @@ import App from './App.jsx'
 import './index.css'
 import {
   BrowserRouter,
-  RouterProvider,
 } from "react-router-dom";
 
 
@@ -30,7 +29,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     <BrowserRouter>
     <App />
-    <div>Hi</div>
     </BrowserRouter>
   </React.StrictMode>,
 )
